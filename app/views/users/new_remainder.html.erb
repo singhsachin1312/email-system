@@ -1,0 +1,18 @@
+<center>
+  <h1>Create Remainder</h1>
+  <%= form_with model: @new_remainder do |form| %>
+    <div>
+      <%= form.label :number %><br>
+      <%= form.text_field :number %>
+    </div>
+
+    <div>
+      <%= form.label :remainder_type %><br>
+      <%= form.select :remainder_type, ['days', 'minutes']%>
+    </div>
+
+    <div>
+      <%= button_to 'submit', user_remainder_path %>
+    </div>
+  <% end %>
+</center>

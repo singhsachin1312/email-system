@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to email system, <%= @user.email %></h1>
+    <p>
+      You have successfully registered
+    </p>
+    <p>
+      Please verify your email address:  <%= link_to "Click here", @url %> .
+    </p>
+ --------------
+    <p>Thanks, have a great day!</p>
+  </body>
+</html>
